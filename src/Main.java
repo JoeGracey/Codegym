@@ -22,5 +22,32 @@ public class Main {
 	        }
 	    }
 	     */
+
+        Dog dog1 = new Dog();
+        dog1.getName();
+        dog1.setName("doggy");
+        dog1.getAge();
+        dog1.setAge(23);
+    }
+
+    public static class Dog {
+        String name;
+        int age;
+
+        public String getName() {
+            return name;
+        }
+
+        public void setName(String name) {
+            this.name = name;
+        }
+
+        public int getAge() {
+            return age;
+        }
+
+        public void setAge(int age) {
+            this.age = age;
+        }
     }
 }
