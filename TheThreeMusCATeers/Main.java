@@ -1,7 +1,12 @@
 public class Main {
 
     public static void main(String[] args) {
+
 	    class Cat {
+			Cat cat1 = new Cat("Sprinkles", 3, 10, 20);
+			Cat cat2 = new Cat("Mittens", 4, 14, 15);
+			Cat cat3 = new Cat("Fluffy", 2, 8, 11);
+
 	        private String name;
 	        private int age;
 	        private int weight;
