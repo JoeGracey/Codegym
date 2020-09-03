@@ -15,12 +15,34 @@ public class Main {
 	     */
     }
 
-    public class Person {
+    public static class Person {
 
         String name = "Joe";
         int age = 41;
         char sex = 'M';
 
-        
+        public String getName() { // Getter
+            return name;
+        }
+
+        public void setName(String newName) { // Setter
+            this.name = newName;
+        }
+
+        public int getAge() { // Getter
+            return age;
+        }
+
+        public void setAge(int newAge) { // Setter
+                this.age = newAge;
+        }
+
+        public char getSex() { // Getter
+            return sex;
+        }
+
+        public void setSex(char newSex) { // Setter
+            this.sex = newSex;
+        }
     }
 }
