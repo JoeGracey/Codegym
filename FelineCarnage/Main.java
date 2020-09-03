@@ -13,6 +13,28 @@ public class Main {
 	    You need to conduct three fights.
 	    The program should display the result of each battle on a new line.
 	     */
+
+        Cat fluffy = new Cat("Fluffy", 16, 20, 12);
+        Cat shadow = new Cat("Shadow", 11, 19, 7);
+        Cat kitty = new Cat("Kitty", 7, 8, 15);
+
+        if(kitty.fight(fluffy)) {
+            System.out.println(kitty.name);
+        } else {
+            System.out.println(fluffy.name);
+        }
+
+        if(fluffy.fight(shadow)) {
+            System.out.println(fluffy.name);
+        } else {
+            System.out.println(shadow.name);
+        }
+
+        if(shadow.fight(kitty)) {
+            System.out.println(shadow.name);
+        } else {
+            System.out.println(kitty.name);
+        }
     }
 
     public static class Cat {
